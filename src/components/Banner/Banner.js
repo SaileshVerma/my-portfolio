@@ -11,9 +11,9 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
 
   const toRotate = [
-    "Mobile App Developer",
-    "Web Developer",
+    "Web  Developer",
     "Software Developer",
+    "Mobile App Developer",
   ];
   const period = 2000;
 
@@ -46,7 +46,7 @@ export const Banner = () => {
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setDelta(500);
+      setDelta(120);
     }
   };
 
@@ -54,9 +54,9 @@ export const Banner = () => {
     <section className="banner">
       <div className="header-container">
         <div className="header-child-1">
-          <span>Welcome to my Portfolio</span>
+          <span className="welcome-text"> Welcome To My Portfolio</span>
           <div className="heading-intro">
-            Hi! I'm Sailesh{" "}
+            Hi!👋 I'm Sailesh{" "}
             <span>
               {text} <span className="caret">|</span>
             </span>

@@ -2,6 +2,8 @@ import "./NavigationBar.css";
 import github from "../../assets/icons/github.svg";
 import linkedin from "../../assets/icons/linkedin.svg";
 import playstore from "../../assets/icons/playstore.svg";
+import twitter from "../../assets/icons/twitter.svg";
+
 import { UserSocialUrl } from "./constants";
 import { useEffect, useState } from "react";
 
@@ -24,7 +26,7 @@ function NavigationBar() {
     <section className={scrolling ? "navbar-onscroll" : "navbar"}>
       <div className="Nav-container">
         <div className="row-container">
-          <h1>Logo</h1>
+          <h1>OSUDEV</h1>
           <div className="Nav-links">
             <a href="/home" className="nav-link-item">
               Home
@@ -65,6 +67,15 @@ function NavigationBar() {
               href={UserSocialUrl.PLAYSTORE}
             >
               <img height={20} width={20} alt="playstore" src={playstore} />
+            </a>
+
+            <a
+              className="Nav-social-icon"
+              target="_blank"
+              rel="noopener noreferrer"
+              href={UserSocialUrl.TWITTER}
+            >
+              <img height={20} width={20} alt="twitter" src={twitter} />
             </a>
           </div>
         </div>
