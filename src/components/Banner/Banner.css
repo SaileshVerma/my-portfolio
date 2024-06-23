@@ -1,0 +1,92 @@
+.header-container {
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  align-items: start;
+  justify-content: space-around;
+}
+
+.header-child-1 {
+  width: 60%;
+  margin-right: 120px; /* Half of the viewport width */
+  height: 50%;
+}
+.header-child-2 {
+  width: 40%; /* Half of the viewport width */
+  height: 50%;
+}
+
+.banner {
+  margin-top: 0;
+  padding: 200px 0 100px 0;
+  background-image: url("../../assets/images/banner-bg.png");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.let-connect {
+  color: inherit;
+  display: inline-flex;
+  flex-direction: row;
+  text-decoration: white;
+  margin-top: 30px;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.arrow-image {
+  color: white;
+  width: 40px;
+  height: 40px;
+}
+
+.heading-intro {
+  font-weight: 600;
+  font-size: 40px;
+  height: 18vh;
+  line-height: 1.2;
+  margin-top: 30px;
+}
+
+.welcome-text {
+  font-size: 20px;
+  padding: 10px 14px 10px 14px;
+  border: 2px solid white;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Move up by 20px */
+  }
+  100% {
+    transform: translateY(0); /* Move back to original position */
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.caret {
+  display: inline-block;
+  font-weight: 100;
+  /* font-size: 30px; */
+  animation: blink 0.8s step-end infinite;
+}
+
+.header-child-2-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Ensure the image covers the area */
+  animation: moveUpDown 3s ease-in-out infinite;
+}

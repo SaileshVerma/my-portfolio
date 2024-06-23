@@ -1,0 +1,102 @@
+.project-container {
+  margin-top: 80px;
+  text-align: center;
+  padding: 40px;
+  margin-left: 80px;
+  margin-right: 80px;
+  /* padding-left: 160px;
+  padding-right: 160px; */
+}
+
+.header {
+  font-size: 40px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.subheading-styles {
+  color: #b8b8b8;
+  font-size: 18px;
+  opacity: 0.9;
+  line-height: 1.8;
+}
+
+.glass-card {
+  height: 250px;
+  width: 280px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 15px;
+  border: 2px solid rgba(150, 111, 214, 0.8);
+  box-shadow: 0 8px 12px rgba(150, 111, 214, 0.4);
+  /* border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  padding: 20px;
+  text-align: left;
+  max-width: 300px;
+  color: #fff;
+}
+.glass-card:hover {
+  height: 250px;
+  width: 280px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  border: 2px solid rgba(150, 111, 214, 0.8);
+  box-shadow: 0 8px 12px rgba(150, 111, 214, 0.4);
+  padding: 20px;
+  text-align: left;
+  max-width: 300px;
+  color: #fff;
+}
+
+.glass-card h1 {
+  font-size: 32px;
+}
+.glass-card span {
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 400;
+  color: #b8b8b8;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* Limit number of lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: initial; /* Reset to initial value to manage line breaks */
+  line-height: 1.2em; /* Adjust line height as needed */
+  text-overflow: ellipsis;
+}
+
+.glass-card p {
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 10px;
+  line-height: 1.28em;
+}
+
+.row-container-heading {
+  /* padding: 0px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.share-img {
+  height: 20px;
+  width: 20px;
+}
+
+.grid-container {
+  padding: 20px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* column-gap: 20px; */
+  row-gap: 50px;
+  align-items: center;
+  justify-content: space-evenly;
+}
