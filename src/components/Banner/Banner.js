@@ -51,7 +51,7 @@ export const Banner = () => {
   };
 
   return (
-    <section className="banner">
+    <section id="home" className="banner">
       <div className="header-container">
         <div className="header-child-1">
           <span className="welcome-text"> Welcome To My Portfolio</span>

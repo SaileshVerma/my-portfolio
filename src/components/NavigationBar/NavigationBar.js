@@ -8,6 +8,8 @@ import { UserSocialUrl } from "./constants";
 import { useEffect, useState } from "react";
 
 function NavigationBar() {
+  const [activeSection, setActiveSection] = useState("");
+
   const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {
@@ -28,13 +30,43 @@ function NavigationBar() {
         <div className="row-container">
           <h1>OSUDEV</h1>
           <div className="Nav-links">
-            <a href="/home" className="nav-link-item">
+            <a
+              href="#home"
+              className={
+                activeSection === "home"
+                  ? "active-nav-link-item"
+                  : "nav-link-item"
+              }
+              onClick={() => {
+                setActiveSection("home");
+              }}
+            >
               Home
             </a>
-            <a href="/home" className="nav-link-item">
+            <a
+              href="#skill"
+              className={
+                activeSection === "skill"
+                  ? "active-nav-link-item"
+                  : "nav-link-item"
+              }
+              onClick={() => {
+                setActiveSection("skill");
+              }}
+            >
               Skills
             </a>
-            <a href="/home" className="nav-link-item">
+            <a
+              href="#project"
+              className={
+                activeSection === "project"
+                  ? "active-nav-link-item"
+                  : "nav-link-item"
+              }
+              onClick={() => {
+                setActiveSection("project");
+              }}
+            >
               Projects
             </a>
           </div>

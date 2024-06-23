@@ -3,7 +3,7 @@ import { TechCarousel } from "./TechCarousel";
 
 export const Skills = () => {
   return (
-    <section className="section-container">
+    <section id="skill" className="section-container">
       <div className="skills-body">
         <h1 className="header">Skills</h1>
         <span className="subheading-styles">

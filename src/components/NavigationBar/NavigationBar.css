@@ -46,6 +46,16 @@
   font-size: 18px;
   opacity: 0.75;
 }
+
+.active-nav-link-item {
+  font-weight: 500;
+  opacity: 1;
+  color: #fff !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
+}
+
 .nav-link-item:hover {
   font-weight: 500;
   opacity: 1;
@@ -57,6 +67,7 @@
   padding: 10px;
   justify-content: space-evenly;
 }
+
 /*  */
 
 .Nav-social-icon {
