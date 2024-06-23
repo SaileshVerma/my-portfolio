@@ -1,0 +1,31 @@
+.section-container {
+  align-items: center;
+  padding: 0 0 50px 0;
+  position: relative;
+}
+
+.skills-body {
+  background: linear-gradient(90deg, #2a1e36, #0e0e0e, #3a2152);
+  border-radius: 30px;
+  text-align: center;
+  margin-top: -60px;
+  padding: 40px;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+  box-shadow: 0 16px 10px rgba(38, 29, 41, 0.3);
+}
+
+.header {
+  font-size: 40px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.subheading-styles {
+  color: #b8b8b8;
+  font-size: 18px;
+  opacity: 0.9;
+  line-height: 1.8;
+}
