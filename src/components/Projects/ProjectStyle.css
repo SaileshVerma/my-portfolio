@@ -100,3 +100,81 @@
   align-items: center;
   justify-content: space-evenly;
 }
+
+@media (max-width: 1024px) {
+  .project-container {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+  }
+
+  .header {
+    font-size: 32px;
+  }
+
+  .subheading-styles {
+    font-size: 16px;
+  }
+
+  .glass-card {
+    height: auto;
+    width: 100%;
+    max-width: none;
+    padding: 20px;
+  }
+
+  .glass-card h1 {
+    font-size: 28px;
+  }
+
+  .glass-card p {
+    font-size: 16px;
+  }
+
+  .grid-container {
+    grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-container {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  .header {
+    font-size: 28px;
+  }
+
+  .subheading-styles {
+    font-size: 14px;
+  }
+
+  .glass-card {
+    height: auto;
+    width: 100%;
+    max-width: none;
+    padding: 15px;
+  }
+
+  .glass-card h1 {
+    font-size: 24px;
+  }
+
+  .glass-card p {
+    font-size: 14px;
+  }
+}

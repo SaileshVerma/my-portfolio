@@ -3,8 +3,10 @@ import github from "../../assets/icons/github.svg";
 import linkedin from "../../assets/icons/linkedin.svg";
 import playstore from "../../assets/icons/playstore.svg";
 import twitter from "../../assets/icons/twitter.svg";
+import medium from "../../assets/icons/medium.svg";
+import leetcode from "../../assets/icons/leetcode.svg";
 
-import { UserSocialUrl } from "./constants";
+import { UserSocialUrl } from "../../utils/constants/nav_bar_data";
 import { useEffect, useState } from "react";
 
 function NavigationBar() {
@@ -78,7 +80,7 @@ function NavigationBar() {
               className="Nav-social-icon"
               target="_blank"
               rel="noopener noreferrer"
-              href={UserSocialUrl.LINKEDIN}
+              href={UserSocialUrl.LINKEDIN_URL}
             >
               <img height={20} width={20} alt="linkedIn" src={linkedin} />
             </a>
@@ -87,7 +89,7 @@ function NavigationBar() {
               className="Nav-social-icon"
               target="_blank"
               rel="noopener noreferrer"
-              href={UserSocialUrl.GITHUB}
+              href={UserSocialUrl.GITHUB_URL}
             >
               <img height={20} width={20} alt="github" src={github} />
             </a>
@@ -96,7 +98,7 @@ function NavigationBar() {
               className="Nav-social-icon"
               target="_blank"
               rel="noopener noreferrer"
-              href={UserSocialUrl.PLAYSTORE}
+              href={UserSocialUrl.PLAYSTORE_URL}
             >
               <img height={20} width={20} alt="playstore" src={playstore} />
             </a>
@@ -105,9 +107,25 @@ function NavigationBar() {
               className="Nav-social-icon"
               target="_blank"
               rel="noopener noreferrer"
-              href={UserSocialUrl.TWITTER}
+              href={UserSocialUrl.TWITTER_URL}
             >
               <img height={20} width={20} alt="twitter" src={twitter} />
+            </a>
+            <a
+              className="Nav-social-icon"
+              target="_blank"
+              rel="noopener noreferrer"
+              href={UserSocialUrl.MEDIUM_URL}
+            >
+              <img height={20} width={20} alt="twitter" src={medium} />
+            </a>
+            <a
+              className="Nav-social-icon"
+              target="_blank"
+              rel="noopener noreferrer"
+              href={UserSocialUrl.LEETCODE_URL}
+            >
+              <img height={20} width={20} alt="twitter" src={leetcode} />
             </a>
           </div>
         </div>

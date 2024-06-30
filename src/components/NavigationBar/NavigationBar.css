@@ -25,10 +25,10 @@
   justify-content: space-between;
   align-items: center;
   /* background-color: #282c34; */
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .Nav-links {
@@ -110,4 +110,47 @@
   font-weight: 500;
   background-color: rgba(255, 255, 255, 0.4);
   border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+  .Nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #282c34; */
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Nav-container {
+    padding: 10px 15px;
+  }
+
+  .nav-link-item {
+    /* padding: 8px 0; */
+    font-size: 16px;
+  }
+
+  .Nav-social-icon {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    padding: 6px;
+  }
+
+  .Nav-social-icon:hover {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    padding: 7px;
+  }
+
+  .nav-button {
+    padding: 10px 15px;
+  }
 }

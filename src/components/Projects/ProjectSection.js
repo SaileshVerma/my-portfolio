@@ -1,7 +1,7 @@
 import "./ProjectStyle.css";
 import visitIcon from "../../assets/icons/share.svg";
 import Tilt from "../../utils/common/TiltBox";
-import { projectData } from "../../utils/data";
+import { ProjectData } from "../../utils/constants/projects_data";
 
 export const ProjectSection = () => {
   return (
@@ -15,7 +15,7 @@ export const ProjectSection = () => {
         the breadth and depth of my experience in the field.
       </span>
       <div className="grid-container">
-        {projectData.map((item, index) => {
+        {ProjectData.map((item, index) => {
           return (
             <GridItem
               key={index}

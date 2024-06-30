@@ -1,8 +1,9 @@
 import "./Banner.css";
 import headerImage from "../../assets/images/header-img.svg";
 import { useState, useEffect } from "react";
-import { UserSocialUrl } from "../NavigationBar/constants";
 import rightArrow from "../../assets/icons/right-arrow.svg";
+import { UserSocialUrl } from "../../utils/constants/nav_bar_data";
+import { UserProfileData } from "../../utils/constants/banner_data";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -10,11 +11,6 @@ export const Banner = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
 
-  const toRotate = [
-    "Web  Developer",
-    "Software Developer",
-    "Mobile App Developer",
-  ];
   const period = 2000;
 
   useEffect(() => {
@@ -28,8 +24,8 @@ export const Banner = () => {
   }, [text, delta]);
 
   const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
+    let i = loopNum % UserProfileData.ROLE.length;
+    let fullText = UserProfileData.ROLE[i];
     let updatedText = isDeleting
       ? fullText.substring(0, text.length - 1)
       : fullText.substring(0, text.length + 1);
@@ -56,19 +52,14 @@ export const Banner = () => {
         <div className="header-child-1">
           <span className="welcome-text"> Welcome To My Portfolio</span>
           <div className="heading-intro">
-            Hi!👋 I'm Sailesh{" "}
+            Hi!👋 I'm {UserProfileData.NAME}, A{" "}
             <span>
               {text} <span className="caret">|</span>
             </span>
           </div>
-          <p>
-            Enthusiastic and innovative Software Developer with a passion for
-            crafting seamless and user-friendly mobile applications and robust
-            backend systems. I am passionate about creating innovative solutions
-            that make a meaningful impact.
-          </p>
+          <p>{UserProfileData.BIO}</p>
 
-          <a className="let-connect" href={UserSocialUrl.GMAIL}>
+          <a className="let-connect" href={UserSocialUrl.LETS_CONNECT_GMAIL}>
             <span>Let's Connect</span>
             <img className="arrow-image" alt="gmail" src={rightArrow} />
           </a>
